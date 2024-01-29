@@ -13,6 +13,8 @@
 		DC6DF9D32B67EC3C0030EF9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6DF9D12B67EC3C0030EF9D /* Main.storyboard */; };
 		DC6DF9D52B67EC3E0030EF9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6DF9D42B67EC3E0030EF9D /* Assets.xcassets */; };
 		DC6DF9D82B67EC3E0030EF9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6DF9D62B67EC3E0030EF9D /* LaunchScreen.storyboard */; };
+		DC6DF9E12B67ED0B0030EF9D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6DF9E02B67ED0B0030EF9D /* CoreLocation.framework */; };
+		DC6DF9E32B67EF390030EF9D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6DF9E22B67EF390030EF9D /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DC6DF9D42B67EC3E0030EF9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC6DF9D72B67EC3E0030EF9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC6DF9D92B67EC3E0030EF9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC6DF9E02B67ED0B0030EF9D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DC6DF9E22B67EF390030EF9D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC6DF9E32B67EF390030EF9D /* MapKit.framework in Frameworks */,
+				DC6DF9E12B67ED0B0030EF9D /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +48,7 @@
 			children = (
 				DC6DF9CA2B67EC3C0030EF9D /* Location Usage */,
 				DC6DF9C92B67EC3C0030EF9D /* Products */,
+				DC6DF9DF2B67ED0B0030EF9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +72,15 @@
 				DC6DF9D92B67EC3E0030EF9D /* Info.plist */,
 			);
 			path = "Location Usage";
+			sourceTree = "<group>";
+		};
+		DC6DF9DF2B67ED0B0030EF9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC6DF9E22B67EF390030EF9D /* MapKit.framework */,
+				DC6DF9E02B67ED0B0030EF9D /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +311,7 @@
 				DEVELOPMENT_TEAM = 3755NX4L2K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Location Usage/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location Tracking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,6 +340,7 @@
 				DEVELOPMENT_TEAM = 3755NX4L2K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Location Usage/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location Tracking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
